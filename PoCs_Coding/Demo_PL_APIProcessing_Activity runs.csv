@@ -1,0 +1,366 @@
+"Activity name","Activity status","Error","Run start","Duration","Input","Output"
+"CountryConfiguration","Inactive","","2/23/2024, 4:19:27 AM","Less than 1s","{}","{
+    ""message"": ""The activity CountryConfiguration is inactive, and its status was set to Succeeded"",
+    ""state"": ""Inactive"",
+    ""markedAs"": ""Succeeded""
+}"
+"Get Metadata1","Succeeded","","2/23/2024, 4:19:27 AM","10s","{
+    ""fieldList"": [
+        ""childItems""
+    ],
+    ""datasetSettings"": {
+        ""annotations"": [],
+        ""linkedService"": {
+            ""name"": ""FabricLakehousePoC"",
+            ""properties"": {
+                ""annotations"": [],
+                ""type"": ""Lakehouse"",
+                ""typeProperties"": {
+                    ""workspaceId"": ""9a1d18cd-bd48-4f79-bd8a-c6fd9b083fd2"",
+                    ""artifactId"": ""d2793208-ad41-44b1-bb3f-47a56f023633"",
+                    ""rootFolder"": ""Files""
+                }
+            }
+        },
+        ""type"": ""Binary"",
+        ""typeProperties"": {
+            ""location"": {
+                ""type"": ""LakehouseLocation"",
+                ""folderPath"": ""Marketing/CMI_DSI/DSI""
+            }
+        }
+    },
+    ""storeSettings"": {
+        ""type"": ""LakehouseReadSettings"",
+        ""enablePartitionDiscovery"": false
+    },
+    ""formatSettings"": {
+        ""type"": ""BinaryReadSettings""
+    }
+}","{
+    ""childItems"": [
+        {
+            ""name"": ""DSI_Content_Categorization_01102024.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_Content_Categorization_10112023.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_Content_Categorization_11222023.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_Content_Categorization_12132023.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20231206.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20231213.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20231220.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240103.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240110.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240117.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240124.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240207.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_flat_flowchart_102023.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""FACT"",
+            ""type"": ""Folder""
+        },
+        {
+            ""name"": ""HER3_HCP_PLD_all_suppliers_20240204.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_control_20240207.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_disp_20240204.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_display_campaign_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_display_urls_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_account_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_bing_20240204.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_campaign_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_google_20240204.csv"",
+            ""type"": ""File""
+        }
+    ],
+    ""executionDuration"": 1
+}"
+"ForEach_Countries","Inactive","","2/23/2024, 4:19:28 AM","Less than 1s","{}","{
+    ""message"": ""The activity ForEach_Countries is inactive, and its status was set to Succeeded"",
+    ""state"": ""Inactive"",
+    ""markedAs"": ""Succeeded""
+}"
+"Copy_LoadFact","Inactive","","2/23/2024, 4:19:28 AM","Less than 1s","{}","{
+    ""message"": ""The activity Copy_LoadFact is inactive, and its status was set to Succeeded"",
+    ""state"": ""Inactive"",
+    ""markedAs"": ""Succeeded""
+}"
+"Copy_LoadDimension","Inactive","","2/23/2024, 4:19:28 AM","Less than 1s","{}","{
+    ""message"": ""The activity Copy_LoadDimension is inactive, and its status was set to Succeeded"",
+    ""state"": ""Inactive"",
+    ""markedAs"": ""Succeeded""
+}"
+"Set variable1","Succeeded","","2/23/2024, 4:19:41 AM","Less than 1s","{
+    ""variableName"": ""getmetadataoutputarray"",
+    ""value"": [
+        {
+            ""name"": ""DSI_Content_Categorization_01102024.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_Content_Categorization_10112023.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_Content_Categorization_11222023.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_Content_Categorization_12132023.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20231206.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20231213.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20231220.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240103.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240110.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240117.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240124.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240207.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_flat_flowchart_102023.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""FACT"",
+            ""type"": ""Folder""
+        },
+        {
+            ""name"": ""HER3_HCP_PLD_all_suppliers_20240204.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_control_20240207.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_disp_20240204.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_display_campaign_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_display_urls_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_account_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_bing_20240204.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_campaign_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_google_20240204.csv"",
+            ""type"": ""File""
+        }
+    ]
+}","{
+    ""name"": ""getmetadataoutputarray"",
+    ""value"": [
+        {
+            ""name"": ""DSI_Content_Categorization_01102024.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_Content_Categorization_10112023.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_Content_Categorization_11222023.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_Content_Categorization_12132023.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20231206.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20231213.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20231220.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240103.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240110.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240117.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240124.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_control_20240207.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""DSI_flat_flowchart_102023.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""FACT"",
+            ""type"": ""Folder""
+        },
+        {
+            ""name"": ""HER3_HCP_PLD_all_suppliers_20240204.txt"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_control_20240207.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_disp_20240204.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_display_campaign_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_display_urls_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_account_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_bing_20240204.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_campaign_20240131.csv"",
+            ""type"": ""File""
+        },
+        {
+            ""name"": ""HER3_sem_google_20240204.csv"",
+            ""type"": ""File""
+        }
+    ]
+}"
+"ForEach_MarketingFile","Inactive","","2/23/2024, 4:19:42 AM","Less than 1s","{}","{
+    ""message"": ""The activity ForEach_MarketingFile is inactive, and its status was set to Succeeded"",
+    ""state"": ""Inactive"",
+    ""markedAs"": ""Succeeded""
+}"
+"Copy_MarketingData","Inactive","","2/23/2024, 4:19:42 AM","Less than 1s","{}","{
+    ""message"": ""The activity Copy_MarketingData is inactive, and its status was set to Succeeded"",
+    ""state"": ""Inactive"",
+    ""markedAs"": ""Succeeded""
+}"
