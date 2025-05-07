@@ -1,0 +1,48 @@
+
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "84041ed0-4398-4b72-ad67-07f48c43db63",
+    "packageName": "com.daiichisankyo.chatdsi-general-assistant-uat.azurewebsites",
+    "developer": {
+      "name": "daiichi_sankyo ",
+      "websiteUrl": "https://dsi-general-assistant-dev.azurewebsites.net/",
+      "privacyUrl": "https://dsi-general-assistant-dev.azurewebsites.net/privacy",
+      "termsOfUseUrl": "https://dsi-general-assistant-dev.azurewebsites.net/terms"
+    },
+    "name": {
+      "short": "ChatDSI",
+      "full": "ChatDSI_Dev"
+    },
+    "description": {
+      "short": "chat application",
+      "full": "ChatDSI is designed to engage in natural language conversations, answer questions, and assist with various tasks."
+    },
+    "icons": {
+      "color": "DSI.jpg",
+      "outline": "DSI_2.png"
+    },
+    "accentColor": "#000000",
+    "staticTabs": [
+      {
+        "entityId": "home",
+        "name": "Home",
+        "contentUrl": "https://dsi-general-assistant-dev.azurewebsites.net",
+        "websiteUrl": "https://dsi-general-assistant-dev.azurewebsites.net",
+        "scopes": [
+          "personal"
+        ]
+      }
+    ],
+    "permissions": [
+      "identity"
+    ],
+    "validDomains": [
+      "https://dsi-general-assistant-dev.azurewebsites.net"
+    ],
+    "webApplicationInfo": {
+    "id": "84041ed0-4398-4b72-ad67-07f48c43db63",  
+    "resource": "api://84041ed0-4398-4b72-ad67-07f48c43db63"  
+}
+  }

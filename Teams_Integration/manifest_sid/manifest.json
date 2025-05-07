@@ -1,0 +1,43 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.19",
+    "version": "1.0.0",
+    "id": "84041ed0-4398-4b72-ad67-07f48c43db63",
+    "developer": {
+      "name": "daiichisankyo",
+      "websiteUrl": "https://dsi-general-assistant-dev.azurewebsites.net/",
+      "privacyUrl": "https://dsi-general-assistant-dev.azurewebsites.net/privacy",
+      "termsOfUseUrl": "https://dsi-general-assistant-dev.azurewebsites.net/terms"
+    },
+    "name": {
+      "short": "chatdsi",
+      "full": "chatdsi"
+    },
+    "description": {
+      "short": "sample for integrating into teams.",
+      "full": "sample chatdsi app hosted on dev for integrating into teams."
+    },
+    "icons": {
+      "color": "color.png",
+      "outline": "outline.png"
+    },
+    "accentColor": "#E6E6FA",
+    "staticTabs": [
+      {
+        "entityId": "home",
+        "name": "Home",
+        "contentUrl": "https://dsi-general-assistant-dev.azurewebsites.net/",
+        "websiteUrl": "https://dsi-general-assistant-dev.azurewebsites.net/",
+        "scopes": [
+          "personal"
+        ]
+      }
+    ],
+    "validDomains": [
+      "dsi-general-assistant-dev.azurewebsites.net"
+    ],
+    "webApplicationInfo": {
+    "id": "84041ed0-4398-4b72-ad67-07f48c43db63",
+    "resource": "api://84041ed0-4398-4b72-ad67-07f48c43db63"
+    }
+}
