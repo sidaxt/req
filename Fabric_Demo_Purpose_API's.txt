@@ -1,0 +1,1372 @@
+
+API Call - 
+https://npiregistry.cms.hhs.gov/api/?number=&enumeration_type=&taxonomy_description=&name_purpose=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=dallas&state=tx&postal_code=&country_code=&limit=&skip=&pretty=on&version=2.1
+
+https://npiregistry.cms.hhs.gov/api/?version=2.1&city=baltimore
+
+
+https://npiregistry.cms.hhs.gov/api/?number=&enumeration_type=NPI-1&taxonomy_description=&name_purpose=&first_name=si*&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=US&limit=10&skip=&pretty=on&version=2.1
+
+{
+    "result_count": 10,
+    "results": [
+        {
+            "created_epoch": "1629321567000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1665669579000",
+            "number": "1700552809",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "27100 CEDAR RD",
+                    "city": "BEACHWOOD",
+                    "state": "OH",
+                    "postal_code": "441221109",
+                    "telephone_number": "216-831-6500"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "17610 SCOTTSDALE BLVD",
+                    "city": "SHAKER HEIGHTS",
+                    "state": "OH",
+                    "postal_code": "441205225",
+                    "telephone_number": "216-430-9456"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIOBHAN",
+                "last_name": "AARON",
+                "middle_name": "PATRICE",
+                "credential": "APRN",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2021-08-18",
+                "last_updated": "2022-10-13",
+                "certification_date": "2022-10-13",
+                "status": "A",
+                "name_prefix": "Dr."
+            },
+            "taxonomies": [
+                {
+                    "code": "163W00000X",
+                    "taxonomy_group": "",
+                    "desc": "Registered Nurse",
+                    "state": "OH",
+                    "license": "384234",
+                    "primary": false
+                },
+                {
+                    "code": "163WH1000X",
+                    "taxonomy_group": "",
+                    "desc": "Registered Nurse, Hospice",
+                    "state": "OH",
+                    "license": "0029182",
+                    "primary": false
+                },
+                {
+                    "code": "363L00000X",
+                    "taxonomy_group": "",
+                    "desc": "Nurse Practitioner",
+                    "state": "OH",
+                    "license": "APRN.CNP.0029182",
+                    "primary": true
+                }
+            ],
+            "identifiers": [
+                {
+                    "code": "01",
+                    "desc": "Other (non-Medicare)",
+                    "issuer": "Ohio eLicense",
+                    "identifier": "APRN.CNP.0029182",
+                    "state": "OH"
+                },
+                {
+                    "code": "01",
+                    "desc": "Other (non-Medicare)",
+                    "issuer": "Ohio eLicense",
+                    "identifier": "RN.384234",
+                    "state": null
+                }
+            ],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1174678768000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1183947785000",
+            "number": "1871610949",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "7 4TH ST STE 13",
+                    "city": "PETALUMA",
+                    "state": "CA",
+                    "postal_code": "949523072",
+                    "telephone_number": "707-769-8050"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "7 4TH ST STE 13",
+                    "city": "PETALUMA",
+                    "state": "CA",
+                    "postal_code": "949523072",
+                    "telephone_number": "707-769-8050"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SID",
+                "last_name": "AARONSON",
+                "sole_proprietor": "YES",
+                "gender": "M",
+                "enumeration_date": "2007-03-23",
+                "last_updated": "2007-07-08",
+                "status": "A",
+                "name_prefix": "--",
+                "name_suffix": "--"
+            },
+            "taxonomies": [
+                {
+                    "code": "106H00000X",
+                    "taxonomy_group": "",
+                    "desc": "Marriage & Family Therapist",
+                    "state": "CA",
+                    "license": "13079",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1167920545000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1183947785000",
+            "number": "1861549925",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "170 CHANGEBRIDGE RD",
+                    "address_2": "SUITE D1",
+                    "city": "MONTVILLE",
+                    "state": "NJ",
+                    "postal_code": "07045",
+                    "telephone_number": "973-575-5150",
+                    "fax_number": "973-575-5271"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "170 CHANGEBRIDGE RD",
+                    "address_2": "SUITE D1",
+                    "city": "MONTVILLE",
+                    "state": "NJ",
+                    "postal_code": "07045",
+                    "telephone_number": "973-575-5150",
+                    "fax_number": "973-575-5271"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIRIKE",
+                "last_name": "AASMAA",
+                "middle_name": "TRUUMEES",
+                "credential": "DO",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2007-01-04",
+                "last_updated": "2007-07-08",
+                "status": "A",
+                "name_prefix": "--",
+                "name_suffix": "--"
+            },
+            "taxonomies": [
+                {
+                    "code": "207R00000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine",
+                    "state": "NJ",
+                    "license": "MB55848",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1631660942000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1633722716000",
+            "number": "1801566518",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "1400 E BOULDER ST",
+                    "city": "COLORADO SPRINGS",
+                    "state": "CO",
+                    "postal_code": "809095533",
+                    "telephone_number": "719-304-6424"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "153 DAVIE DR",
+                    "city": "COLORADO SPRINGS",
+                    "state": "CO",
+                    "postal_code": "809111423",
+                    "telephone_number": "719-304-6424"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIMONE",
+                "last_name": "ABACHICHE",
+                "middle_name": "ENRIQUEZ",
+                "credential": "NP",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2021-09-14",
+                "last_updated": "2021-10-08",
+                "certification_date": "2021-10-08",
+                "status": "A",
+                "name_prefix": "Ms."
+            },
+            "taxonomies": [
+                {
+                    "code": "163WE0003X",
+                    "taxonomy_group": "",
+                    "desc": "Registered Nurse, Emergency",
+                    "state": "CO",
+                    "license": "RN.1628579",
+                    "primary": false
+                },
+                {
+                    "code": "363L00000X",
+                    "taxonomy_group": "",
+                    "desc": "Nurse Practitioner",
+                    "state": "CO",
+                    "license": "APN.0996969-NP",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1287764218000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1703560666000",
+            "number": "1447550645",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "545 ROUTE 18",
+                    "city": "EAST BRUNSWICK",
+                    "state": "NJ",
+                    "postal_code": "088163083",
+                    "telephone_number": "908-315-7880",
+                    "fax_number": "908-944-5408"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "545 ROUTE 18",
+                    "city": "EAST BRUNSWICK",
+                    "state": "NJ",
+                    "postal_code": "088163083",
+                    "telephone_number": "908-315-7880",
+                    "fax_number": "908-944-5408"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SILVANA",
+                "last_name": "ABADEER",
+                "credential": "O.D.",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2010-10-22",
+                "last_updated": "2023-12-25",
+                "certification_date": "2023-12-25",
+                "status": "A"
+            },
+            "taxonomies": [
+                {
+                    "code": "152W00000X",
+                    "taxonomy_group": "",
+                    "desc": "Optometrist",
+                    "state": "NJ",
+                    "license": "27OA00628100",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1220639623000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1606882739000",
+            "number": "1699923375",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "1431 WARNER AVE STE E",
+                    "city": "TUSTIN",
+                    "state": "CA",
+                    "postal_code": "927806444",
+                    "telephone_number": "949-648-0303"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "16300 SAND CANYON AVE STE 506",
+                    "city": "IRVINE",
+                    "state": "CA",
+                    "postal_code": "926183705",
+                    "telephone_number": "949-201-4444"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIAMAK",
+                "last_name": "ABAI",
+                "credential": "D.D.S., M.Med.Sc.",
+                "sole_proprietor": "YES",
+                "gender": "M",
+                "enumeration_date": "2008-09-05",
+                "last_updated": "2020-12-01",
+                "certification_date": "2020-12-01",
+                "status": "A"
+            },
+            "taxonomies": [
+                {
+                    "code": "1223P0700X",
+                    "taxonomy_group": "",
+                    "desc": "Dentist, Prosthodontics",
+                    "state": "CA",
+                    "license": "54930",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1588630479000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1588630479000",
+            "number": "1134740830",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "15339 SATICOY ST",
+                    "city": "VAN NUYS",
+                    "state": "CA",
+                    "postal_code": "914063345",
+                    "telephone_number": "818-267-2681"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "15339 SATICOY ST",
+                    "city": "VAN NUYS",
+                    "state": "CA",
+                    "postal_code": "914063345",
+                    "telephone_number": "818-267-2681"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIOMARA",
+                "last_name": "ABARCA",
+                "middle_name": "LIZET",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2020-05-04",
+                "last_updated": "2020-05-04",
+                "certification_date": "2020-05-04",
+                "status": "A"
+            },
+            "taxonomies": [
+                {
+                    "code": "225400000X",
+                    "taxonomy_group": "",
+                    "desc": "Rehabilitation Practitioner",
+                    "state": null,
+                    "license": null,
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1419281777000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1419281777000",
+            "number": "1235527482",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "2808 NE MLK BLVD",
+                    "address_2": "SUITE C",
+                    "city": "PORTLAND",
+                    "state": "OR",
+                    "postal_code": "97212",
+                    "telephone_number": "520-907-6339"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "2808 NE MLK BLVD",
+                    "address_2": "SUITE C",
+                    "city": "PORTLAND",
+                    "state": "OR",
+                    "postal_code": "97212",
+                    "telephone_number": "520-907-6339"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIERRA",
+                "last_name": "ABATE",
+                "middle_name": "NICOLE",
+                "credential": "L.Ac.",
+                "sole_proprietor": "YES",
+                "gender": "F",
+                "enumeration_date": "2014-12-22",
+                "last_updated": "2014-12-22",
+                "status": "A",
+                "name_prefix": "Ms.",
+                "name_suffix": "--"
+            },
+            "taxonomies": [
+                {
+                    "code": "171100000X",
+                    "taxonomy_group": "",
+                    "desc": "Acupuncturist",
+                    "state": "OR",
+                    "license": "AC169954",
+                    "primary": true
+                },
+                {
+                    "code": "171100000X",
+                    "taxonomy_group": "",
+                    "desc": "Acupuncturist",
+                    "state": "CA",
+                    "license": "AC16075",
+                    "primary": false
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1303427066000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1409762619000",
+            "number": "1871884007",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "18414 US HIGHWAY 281 N STE 104",
+                    "city": "SAN ANTONIO",
+                    "state": "TX",
+                    "postal_code": "782597611",
+                    "telephone_number": "210-495-0222",
+                    "fax_number": "210-495-0343"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "18414 US HIGHWAY 281 N STE 104",
+                    "city": "SAN ANTONIO",
+                    "state": "TX",
+                    "postal_code": "782597611",
+                    "telephone_number": "210-495-0222",
+                    "fax_number": "210-495-0343"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIU-HAN",
+                "last_name": "ABATE",
+                "middle_name": "PAOLA",
+                "credential": "MD",
+                "sole_proprietor": "YES",
+                "gender": "F",
+                "enumeration_date": "2011-04-21",
+                "last_updated": "2014-09-03",
+                "status": "A",
+                "name_prefix": "Dr.",
+                "name_suffix": "--"
+            },
+            "taxonomies": [
+                {
+                    "code": "174400000X",
+                    "taxonomy_group": "193200000X - Multi-Specialty Group",
+                    "desc": "Specialist",
+                    "state": "TX",
+                    "license": "Q0393",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": [
+                {
+                    "type": "Former Name",
+                    "code": "1",
+                    "first_name": "SIU-HAN",
+                    "last_name": "ARTEAGA",
+                    "middle_name": "PAOLA",
+                    "prefix": "Dr.",
+                    "suffix": "--"
+                }
+            ]
+        },
+        {
+            "created_epoch": "1154655646000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1654117259000",
+            "number": "1528076718",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "80 E HILLCREST DR STE 102",
+                    "city": "THOUSAND OAKS",
+                    "state": "CA",
+                    "postal_code": "913604219",
+                    "telephone_number": "805-497-3575"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "80 E HILLCREST DR STE 102",
+                    "city": "THOUSAND OAKS",
+                    "state": "CA",
+                    "postal_code": "913604219",
+                    "telephone_number": "805-497-3575"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIDDIQUE",
+                "last_name": "ABBASI",
+                "credential": "MD",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2006-08-03",
+                "last_updated": "2022-06-01",
+                "certification_date": "2022-06-01",
+                "status": "A"
+            },
+            "taxonomies": [
+                {
+                    "code": "207R00000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine",
+                    "state": "NY",
+                    "license": "249446-1",
+                    "primary": false
+                },
+                {
+                    "code": "207RC0000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine, Cardiovascular Disease",
+                    "state": "RI",
+                    "license": "MD14689",
+                    "primary": false
+                },
+                {
+                    "code": "207RC0000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine, Cardiovascular Disease",
+                    "state": "IL",
+                    "license": "036123863",
+                    "primary": false
+                },
+                {
+                    "code": "207RC0000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine, Cardiovascular Disease",
+                    "state": "CA",
+                    "license": "C165619",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        }
+    ]
+}
+
+
+
+https://npiregistry.cms.hhs.gov/api/?number=&enumeration_type=NPI-1&taxonomy_description=&name_purpose=&first_name=si*&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code={country_code}&limit=10&skip=&pretty=on&version=2.1
+
+https://npiregistry.cms.hhs.gov/api/
+?number=&enumeration_type=NPI-1&taxonomy_description=&name_purpose=&first_name=si*&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&limit=10&skip=&pretty=on&version=2.1&country_code=IN
+
+@concat('?number=&enumeration_type=NPI-1&taxonomy_description=&name_purpose=&first_name=si*&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&limit=10&skip=&pretty=on&version=2.1&country_code=',activity('CountryConfiguration').output.value)
+
+Relative URL:
+@concat('?number=&enumeration_type=NPI-1&taxonomy_description=&name_purpose=&first_name=si*&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&limit=10&skip=&pretty=on&version=2.1&country_code=',item().country_code)
+
+
+parameter: country_code  ["IN","US","UK","IT","CN"]
+Output File Name: @concat('Country_',item().country_code)
+
+
+https://npiregistry.cms.hhs.gov/api/?number=&enumeration_type=NPI-1&taxonomy_description=&name_purpose=&first_name=si*&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code={country_code}&limit=10&skip=&pretty=on&version=2.1
+
+Lookup Output:
+{
+	"count": 5,
+	"value": [
+		{
+			"Country_Code": "US"
+		},
+		{
+			"Country_Code": "IN"
+		},
+		{
+			"Country_Code": "IT"
+		},
+		{
+			"Country_Code": "UK"
+		},
+		{
+			"Country_Code": "CN"
+		}
+	]
+}
+
+
+https://npiregistry.cms.hhs.gov/api/?number=&enumeration_type=NPI-1&taxonomy_description=&name_purpose=&first_name=si*&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&limit=10&skip=&pretty=on&version=2.1&country_code=IN
+
+
+https://npiregistry.cms.hhs.gov/api/?number=&enumeration_type=NPI-1&taxonomy_description=&name_purpose=&first_name=si*&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=10&skip=&pretty=on&version=2.1
+
+
+{
+    "result_count": 10,
+    "results": [
+        {
+            "created_epoch": "1629321567000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1665669579000",
+            "number": "1700552809",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "27100 CEDAR RD",
+                    "city": "BEACHWOOD",
+                    "state": "OH",
+                    "postal_code": "441221109",
+                    "telephone_number": "216-831-6500"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "17610 SCOTTSDALE BLVD",
+                    "city": "SHAKER HEIGHTS",
+                    "state": "OH",
+                    "postal_code": "441205225",
+                    "telephone_number": "216-430-9456"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIOBHAN",
+                "last_name": "AARON",
+                "middle_name": "PATRICE",
+                "credential": "APRN",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2021-08-18",
+                "last_updated": "2022-10-13",
+                "certification_date": "2022-10-13",
+                "status": "A",
+                "name_prefix": "Dr."
+            },
+            "taxonomies": [
+                {
+                    "code": "163W00000X",
+                    "taxonomy_group": "",
+                    "desc": "Registered Nurse",
+                    "state": "OH",
+                    "license": "384234",
+                    "primary": false
+                },
+                {
+                    "code": "163WH1000X",
+                    "taxonomy_group": "",
+                    "desc": "Registered Nurse, Hospice",
+                    "state": "OH",
+                    "license": "0029182",
+                    "primary": false
+                },
+                {
+                    "code": "363L00000X",
+                    "taxonomy_group": "",
+                    "desc": "Nurse Practitioner",
+                    "state": "OH",
+                    "license": "APRN.CNP.0029182",
+                    "primary": true
+                }
+            ],
+            "identifiers": [
+                {
+                    "code": "01",
+                    "desc": "Other (non-Medicare)",
+                    "issuer": "Ohio eLicense",
+                    "identifier": "APRN.CNP.0029182",
+                    "state": "OH"
+                },
+                {
+                    "code": "01",
+                    "desc": "Other (non-Medicare)",
+                    "issuer": "Ohio eLicense",
+                    "identifier": "RN.384234",
+                    "state": null
+                }
+            ],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1174678768000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1183947785000",
+            "number": "1871610949",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "7 4TH ST STE 13",
+                    "city": "PETALUMA",
+                    "state": "CA",
+                    "postal_code": "949523072",
+                    "telephone_number": "707-769-8050"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "7 4TH ST STE 13",
+                    "city": "PETALUMA",
+                    "state": "CA",
+                    "postal_code": "949523072",
+                    "telephone_number": "707-769-8050"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SID",
+                "last_name": "AARONSON",
+                "sole_proprietor": "YES",
+                "gender": "M",
+                "enumeration_date": "2007-03-23",
+                "last_updated": "2007-07-08",
+                "status": "A",
+                "name_prefix": "--",
+                "name_suffix": "--"
+            },
+            "taxonomies": [
+                {
+                    "code": "106H00000X",
+                    "taxonomy_group": "",
+                    "desc": "Marriage & Family Therapist",
+                    "state": "CA",
+                    "license": "13079",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1167920545000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1183947785000",
+            "number": "1861549925",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "170 CHANGEBRIDGE RD",
+                    "address_2": "SUITE D1",
+                    "city": "MONTVILLE",
+                    "state": "NJ",
+                    "postal_code": "07045",
+                    "telephone_number": "973-575-5150",
+                    "fax_number": "973-575-5271"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "170 CHANGEBRIDGE RD",
+                    "address_2": "SUITE D1",
+                    "city": "MONTVILLE",
+                    "state": "NJ",
+                    "postal_code": "07045",
+                    "telephone_number": "973-575-5150",
+                    "fax_number": "973-575-5271"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIRIKE",
+                "last_name": "AASMAA",
+                "middle_name": "TRUUMEES",
+                "credential": "DO",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2007-01-04",
+                "last_updated": "2007-07-08",
+                "status": "A",
+                "name_prefix": "--",
+                "name_suffix": "--"
+            },
+            "taxonomies": [
+                {
+                    "code": "207R00000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine",
+                    "state": "NJ",
+                    "license": "MB55848",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1631660942000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1633722716000",
+            "number": "1801566518",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "1400 E BOULDER ST",
+                    "city": "COLORADO SPRINGS",
+                    "state": "CO",
+                    "postal_code": "809095533",
+                    "telephone_number": "719-304-6424"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "153 DAVIE DR",
+                    "city": "COLORADO SPRINGS",
+                    "state": "CO",
+                    "postal_code": "809111423",
+                    "telephone_number": "719-304-6424"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIMONE",
+                "last_name": "ABACHICHE",
+                "middle_name": "ENRIQUEZ",
+                "credential": "NP",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2021-09-14",
+                "last_updated": "2021-10-08",
+                "certification_date": "2021-10-08",
+                "status": "A",
+                "name_prefix": "Ms."
+            },
+            "taxonomies": [
+                {
+                    "code": "163WE0003X",
+                    "taxonomy_group": "",
+                    "desc": "Registered Nurse, Emergency",
+                    "state": "CO",
+                    "license": "RN.1628579",
+                    "primary": false
+                },
+                {
+                    "code": "363L00000X",
+                    "taxonomy_group": "",
+                    "desc": "Nurse Practitioner",
+                    "state": "CO",
+                    "license": "APN.0996969-NP",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1287764218000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1703560666000",
+            "number": "1447550645",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "545 ROUTE 18",
+                    "city": "EAST BRUNSWICK",
+                    "state": "NJ",
+                    "postal_code": "088163083",
+                    "telephone_number": "908-315-7880",
+                    "fax_number": "908-944-5408"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "545 ROUTE 18",
+                    "city": "EAST BRUNSWICK",
+                    "state": "NJ",
+                    "postal_code": "088163083",
+                    "telephone_number": "908-315-7880",
+                    "fax_number": "908-944-5408"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SILVANA",
+                "last_name": "ABADEER",
+                "credential": "O.D.",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2010-10-22",
+                "last_updated": "2023-12-25",
+                "certification_date": "2023-12-25",
+                "status": "A"
+            },
+            "taxonomies": [
+                {
+                    "code": "152W00000X",
+                    "taxonomy_group": "",
+                    "desc": "Optometrist",
+                    "state": "NJ",
+                    "license": "27OA00628100",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1220639623000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1606882739000",
+            "number": "1699923375",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "1431 WARNER AVE STE E",
+                    "city": "TUSTIN",
+                    "state": "CA",
+                    "postal_code": "927806444",
+                    "telephone_number": "949-648-0303"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "16300 SAND CANYON AVE STE 506",
+                    "city": "IRVINE",
+                    "state": "CA",
+                    "postal_code": "926183705",
+                    "telephone_number": "949-201-4444"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIAMAK",
+                "last_name": "ABAI",
+                "credential": "D.D.S., M.Med.Sc.",
+                "sole_proprietor": "YES",
+                "gender": "M",
+                "enumeration_date": "2008-09-05",
+                "last_updated": "2020-12-01",
+                "certification_date": "2020-12-01",
+                "status": "A"
+            },
+            "taxonomies": [
+                {
+                    "code": "1223P0700X",
+                    "taxonomy_group": "",
+                    "desc": "Dentist, Prosthodontics",
+                    "state": "CA",
+                    "license": "54930",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1588630479000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1588630479000",
+            "number": "1134740830",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "15339 SATICOY ST",
+                    "city": "VAN NUYS",
+                    "state": "CA",
+                    "postal_code": "914063345",
+                    "telephone_number": "818-267-2681"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "15339 SATICOY ST",
+                    "city": "VAN NUYS",
+                    "state": "CA",
+                    "postal_code": "914063345",
+                    "telephone_number": "818-267-2681"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIOMARA",
+                "last_name": "ABARCA",
+                "middle_name": "LIZET",
+                "sole_proprietor": "NO",
+                "gender": "F",
+                "enumeration_date": "2020-05-04",
+                "last_updated": "2020-05-04",
+                "certification_date": "2020-05-04",
+                "status": "A"
+            },
+            "taxonomies": [
+                {
+                    "code": "225400000X",
+                    "taxonomy_group": "",
+                    "desc": "Rehabilitation Practitioner",
+                    "state": null,
+                    "license": null,
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1419281777000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1419281777000",
+            "number": "1235527482",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "2808 NE MLK BLVD",
+                    "address_2": "SUITE C",
+                    "city": "PORTLAND",
+                    "state": "OR",
+                    "postal_code": "97212",
+                    "telephone_number": "520-907-6339"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "2808 NE MLK BLVD",
+                    "address_2": "SUITE C",
+                    "city": "PORTLAND",
+                    "state": "OR",
+                    "postal_code": "97212",
+                    "telephone_number": "520-907-6339"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIERRA",
+                "last_name": "ABATE",
+                "middle_name": "NICOLE",
+                "credential": "L.Ac.",
+                "sole_proprietor": "YES",
+                "gender": "F",
+                "enumeration_date": "2014-12-22",
+                "last_updated": "2014-12-22",
+                "status": "A",
+                "name_prefix": "Ms.",
+                "name_suffix": "--"
+            },
+            "taxonomies": [
+                {
+                    "code": "171100000X",
+                    "taxonomy_group": "",
+                    "desc": "Acupuncturist",
+                    "state": "OR",
+                    "license": "AC169954",
+                    "primary": true
+                },
+                {
+                    "code": "171100000X",
+                    "taxonomy_group": "",
+                    "desc": "Acupuncturist",
+                    "state": "CA",
+                    "license": "AC16075",
+                    "primary": false
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        },
+        {
+            "created_epoch": "1303427066000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1409762619000",
+            "number": "1871884007",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "18414 US HIGHWAY 281 N STE 104",
+                    "city": "SAN ANTONIO",
+                    "state": "TX",
+                    "postal_code": "782597611",
+                    "telephone_number": "210-495-0222",
+                    "fax_number": "210-495-0343"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "18414 US HIGHWAY 281 N STE 104",
+                    "city": "SAN ANTONIO",
+                    "state": "TX",
+                    "postal_code": "782597611",
+                    "telephone_number": "210-495-0222",
+                    "fax_number": "210-495-0343"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIU-HAN",
+                "last_name": "ABATE",
+                "middle_name": "PAOLA",
+                "credential": "MD",
+                "sole_proprietor": "YES",
+                "gender": "F",
+                "enumeration_date": "2011-04-21",
+                "last_updated": "2014-09-03",
+                "status": "A",
+                "name_prefix": "Dr.",
+                "name_suffix": "--"
+            },
+            "taxonomies": [
+                {
+                    "code": "174400000X",
+                    "taxonomy_group": "193200000X - Multi-Specialty Group",
+                    "desc": "Specialist",
+                    "state": "TX",
+                    "license": "Q0393",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": [
+                {
+                    "type": "Former Name",
+                    "code": "1",
+                    "first_name": "SIU-HAN",
+                    "last_name": "ARTEAGA",
+                    "middle_name": "PAOLA",
+                    "prefix": "Dr.",
+                    "suffix": "--"
+                }
+            ]
+        },
+        {
+            "created_epoch": "1154655646000",
+            "enumeration_type": "NPI-1",
+            "last_updated_epoch": "1654117259000",
+            "number": "1528076718",
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "80 E HILLCREST DR STE 102",
+                    "city": "THOUSAND OAKS",
+                    "state": "CA",
+                    "postal_code": "913604219",
+                    "telephone_number": "805-497-3575"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "80 E HILLCREST DR STE 102",
+                    "city": "THOUSAND OAKS",
+                    "state": "CA",
+                    "postal_code": "913604219",
+                    "telephone_number": "805-497-3575"
+                }
+            ],
+            "practiceLocations": [],
+            "basic": {
+                "first_name": "SIDDIQUE",
+                "last_name": "ABBASI",
+                "credential": "MD",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2006-08-03",
+                "last_updated": "2022-06-01",
+                "certification_date": "2022-06-01",
+                "status": "A"
+            },
+            "taxonomies": [
+                {
+                    "code": "207R00000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine",
+                    "state": "NY",
+                    "license": "249446-1",
+                    "primary": false
+                },
+                {
+                    "code": "207RC0000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine, Cardiovascular Disease",
+                    "state": "RI",
+                    "license": "MD14689",
+                    "primary": false
+                },
+                {
+                    "code": "207RC0000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine, Cardiovascular Disease",
+                    "state": "IL",
+                    "license": "036123863",
+                    "primary": false
+                },
+                {
+                    "code": "207RC0000X",
+                    "taxonomy_group": "",
+                    "desc": "Internal Medicine, Cardiovascular Disease",
+                    "state": "CA",
+                    "license": "C165619",
+                    "primary": true
+                }
+            ],
+            "identifiers": [],
+            "endpoints": [],
+            "other_names": []
+        }
+    ]
+}
+
+

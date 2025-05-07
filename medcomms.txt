@@ -1,0 +1,11 @@
+URL: https://sb-daiichisankyo-medcomms.veevavault.com/
+Username: integration.5@sb-daiichisankyo.com
+pd: Daiichi2024
+
+
+https://{{vaultDNS}}/api/{{version}}/auth
+https://{{vaultDNS}}/api/{{version}}/objects/documents
+sb-daiichisankyo-medcomms.veevavault.com
+v23.3
+
+

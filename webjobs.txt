@@ -1,0 +1,157 @@
+
+    # # Trigger the webhook
+    # webhook_data = {
+    #     "filename": uploaded_file.filename,
+    #     "url": blob_client.url,
+    # }
+    # response = requests.post(WEBHOOK_URL, json=webhook_data)
+    
+	
+	
+	
+@bp.route('/webhook',methods=['POST'])
+async def webhook():
+    data = await request.json
+    print(f"Webhook received: {data}")
+    return {"message": "Webhook received"}, 200
+
+
+
+@bp.route("/webhook-response", methods=["POST"])
+async def webhook_response():
+    data = await request.json
+    print(f"Webhook received: {data}")
+    # Handle the processed file response
+    return jsonify({"message": "Webhook received"}), 200
+
+
+
+
+1. make separate api from frontend - tsx page and api.ts - for unstructured files (bulk upload and sharepoint processing) and rest for others
+2. in backend, @bp.route having webjob code for unstructured files upload
+	-> create def/function to process files uploaded
+	-> load files into blob/container instead of local folder 
+		-> containers needs to be created for each user and each session and it has to be processed separately and give the response specific to that user and session
+		-> Create task_id for each user and session and pass it to webjob based on which webhook can use this task_id for response capturing
+	-> rest of the functionality remains same
+	-> convert non-pdf's into pdf's, index creation, image extraction, vector store, citations, scanneddoc
+	-> webjob code containing this should send the whole object back with indexes chunks along with citations
+	-> capture this as return object to webhook
+3. webhook to notify user about file processing
+	-> webjob response capture and notify user about completion
+4. Webjob piece of code should be made into one single .py file and add req's.txt - both into a zip file which is to be uploaded into webjobs in azure
+5. webjob processing has to be defined at regular intervals like 30 sec, 1 min etc.
+	-> This is to try and optimize
+	-> webjob is triggered from the code and processes those files which are uploaded from backend - so this can be manual webjob or continuous
+6. Error and Exception handling
+	-> How does webjob or webhook notify user in case of failure
+	-> Can webjob can revert file processing on click of cancel while uploading
+7. Webhook URL
+	-> Define in env file and pass it as environment variables in Azure web app
+8. Environment variables in Azure Web app configuration settings
+	-> AZURE_STORAGE_CONNECTION_STRING: Your Azure Blob Storage connection string.
+	-> CONTAINER_NAME: The name of the blob container (e.g., uploads).
+	-> WEBHOOK_URL: The URL of your backend webhook endpoint.
+	-> PROCESSING_INTERVAL: The polling interval (default: 30 seconds).
+9. Webjobs creation from Azure portal -> enable webjobs as true in env. variables and add storage conn. string values
+	-> Make a zip of .py (code to upload files) file and req.txt
+	-> Name the webjob and upload file and make it continuous with interval of 30 sec/1 min
+10. once api is created from frontend and invoked from backend, do a code cleanup of existing upload functionality for unstructured files
+11. clear embeddings (document), delete files, reset
+	-> Separate functionality, needs to be tested thoroughly
+12. Webjob code - cleanup
+	-> Instead of single .py file with all the upload functionality, it has to be splitted to separate files like how we currently have it in repos
+
+
+13. Logic apps or azure functions -- can it be tried instead of webjobs? what's the optimal or best approach without much of dependencies?
+
+
+
+queue:
+https://sapocopenai.queue.core.windows.net/file-processing-queue
+
+
+
+$ResourceGroup = "<ResourceGroupName>"
+$AppServiceName = "<AppServiceName>"
+$WebJobName = "<WebJobName>"
+$ZipPath = "<PathToWebJobZip>"
+
+az webapp webjob continuous add `
+  --resource-group $ResourceGroup `
+  --name $AppServiceName `
+  --webjob-name $WebJobName `
+  --file-path $ZipPath
+
+
+$ResourceGroup = "RG-PoC-OpenAI"
+$AppServiceName = "dsi-general-assistant-dev"
+$WebJobName = "fileupload"
+$ZipPath = "fileUploadsWebJob.zip"
+
+az webapp webjob continuous add `
+  --resource-group $ResourceGroup `
+  --name $AppServiceName `
+  --webjob-name $WebJobName `
+  --file-path $ZipPath
+
+az webapp webjob continuous add --resource-group $ResourceGroup  --name $AppServiceName  --webjob-name $WebJobName  --file-path .\fileUploadsWebJob.zip
+
+'add' is misspelled or not recognized by the system.
+Examples from AI knowledge base:
+https://aka.ms/cli_ref
+Read more about the command in reference docs
+
+
+
+    # Load the document
+    doc = loader.load()
+    # Split the document into chunks with the specified chunk size and overlap
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
+    split_docs = text_splitter.split_documents(doc)
+    print(split_docs, "158")
+    # Threshold for determining insufficient text content
+    token_threshold = 20
+    insufficient_text_pages = []
+    has_text = False
+    # img_docs
+
+    # Check each chunk for text content length
+    total_tokens = sum(len(chunk.page_content.split()) for chunk in split_docs)
+    has_text = total_tokens > 20
+    for idx, chunk in enumerate(split_docs):
+        # Handle page/slide metadata based on file type
+        # if len(chunk.page_content.split()) >= token_threshold:
+            # has_text = True
+        if path.endswith(('.ppt', '.pptx')):
+            print("****************************171******************************")
+            chunk.metadata["page"] = idx + 1  # Using chunk index to assign slide number (starting from 1)
+        else:
+            chunk.metadata["page"] = chunk.metadata.get("page", 0) + 1
+
+        #        # print("Img_docs",img_doc,"Img_Docs")
+        # else:
+        #     has_text = False
+        #     if path.endswith(('.ppt', '.pptx')):
+        #         print("****************************171******************************")
+        #         chunk.metadata["page"] = idx + 1  # Using chunk index to assign slide number (starting from 1)
+        #     else:
+        #         chunk.metadata["page"] = chunk.metadata.get("page", 0) + 1
+            # chunk.metadata["page"] = idx + 1
+        print(insufficient_text_pages, "178")
+        print(chunk.metadata["page"])       
+            # insufficient_text_pages.append(chunk.metadata["page"]) 
+    # for chunk in split_docs:
+    #     chunk.metadata["page"] = chunk.metadata.get("page", 0) + 1
+    #     if len(chunk.page_content.split()) >= token_threshold:
+    #         has_text = True  # Mark that the document has text
+
+    #            # print("Img_docs",img_doc,"Img_Docs")
+    #     else:
+            # insufficient_text_pages.append(chunk.metadata["page"])
+            
+
+    scanned_doc_handler = scannned_document()
+    print("******************191********************")
+
+
