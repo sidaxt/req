@@ -1,0 +1,125 @@
+Short: ChatDSI App upload in Teams (install in Teams)
+
+Desc:
+ChatDSI has to enabled as an Teams App for UAT environment. We are submitting the package file along with the ticket.
+
+Kindly make this App auto-installed in Teams client. Can you add this App only to below list of users:
+amey.deorukhkar.ext@daiichisankyo.com
+aditi.manohar.ext@daiichisankyo.com
+rakshit.manhas.ext@daiichisankyo.com
+maru.parag.ext@daiichisankyo.com
+indraja.purushottam.ext@daiichisankyo.com
+sanskar.rathore.ext@daiichisankyo.com
+sidharth.sirish.ext@daiichisankyo.com
+bilahari.manipuzha.ext@daiichisankyo.com
+smrithi.nair@daiichisankyo.com
+ramesh.natarajan@daiichisankyo.com
+robert.caldera.ext@daiichisankyo.com
+guneesh.bhatia@daiichisankyo.com
+
+If that is not possible to add the App to set of users mentioned, then add this app to the AD group - "SG-DSI-AOAI_DEV_TEAM". Object ID for this group is "0eac92ad-f3e5-40c6-b314-47688f7adcc0".
+
+
+Justification:
+Currently, ChatDSI UAT is accessible through browser (URL: https://chatdsi-general-assistant-uat.azurewebsites.net/). Now, we would like to have it as an App in Teams itself. So as to do that, we would need auto-installation of ChatDSI as a Teams App and to be enabled for UAT users. Once UAT is successful, this can be enabled for Production too.
+
+
+Implementation Plan:
+Upload the app package (ChatDSI_UAT.zip) into Teams Admin portal and enable it for specific set of users.
+
+
+To Add ChatDSI_UAT app to "Teams Apps for DSI" Permission Policy:
+
+1. Login to App Permission policies from Teams admin center.
+2. Open policy "Teams Apps for DSI" and add ChatDSI app in Third-Party Apps.
+
+To Create custom app setup policy to install ChatDSI_UAT app for set of DSI users:
+
+1. Login to Teams Admin center and select Settings & policies
+2. Under custom policies select App Setup policy
+3. Add new policy and add ChatDSI_UAT app in Installed apps and save the policy.
+4. Select the created policy add assign the group "SG-DSI-AOAI_DEV_TEAM" using manage users option.
+
+
+
+
+Risk and Impact analysis:
+No Risk, If something went wrong, the App will not be installed in users PC and this will not affect the existing setup
+
+Backout plan:
+To Remove ChatDSI_UAT app to "Teams Apps for DSI" Permission Policy:
+
+1. Login to App Permission policies from Teams admin center.
+2. Open policy "Teams Apps for DSI" and remove ChatDSI_UAT app in Third-Party Apps.
+
+To Delete custom app setup policy to install ChatDSI_UAT app:
+
+1. Login to Teams Admin center and select Settings & policies
+2. under custom policies select App Setup policy
+3. Select and delete new custom policy created
+
+Test Plan:
+Members of DSI IT and Application team will be checking for installation of ChatDSI_UAT app over MS Teams
+
+
+
+
+
+To Re-Add Thrive Global app to "Teams Apps for DSI" Permission Policy for DSI users (DSG_Intune_All_USA_Users_Dynamic):
+
+1. Login to App Permission policies from Teams admin center.
+2. Open policy "Teams Apps for DSI" and remove Thrive Global app in Third-Party Apps and Re-add it back
+
+To Re-Add Thrive Global app to "Thrive Global For DSI" from App Setup policy:
+
+1. Login to Teams Admin center and select Settings & policies
+2. under custom policies select App Setup policy
+3. Open Policy "Thrive Global For DSI" and remove and readd Thrive Global app from both Pined and Installed apps.
+
+
+
+To Add Thrive Global app to "Teams Apps for DSI" Permission Policy:
+
+1. Login to App Permission policies from Teams admin center.
+2. Open policy "Teams Apps for DSI" and add Thrive Global app in Third-Party Apps.
+
+To Create custom app setup policy to install Thrive Global app for all DSI users:
+
+1. Login to Teams Admin center and select Settings & policies
+2. under custom policies select App Setup policy
+3. Add new policy and add Thrive Global app in both Installed apps and Pinned Apps and save the policy.
+4. Select the created policy add assign the group "SG-DSI-AllUsers" using manage users option.
+
+
+
+
+
+
+To Remove Thrive Global app to "Teams Apps for DSI" Permission Policy:
+
+1. Login to App Permission policies from Teams admin center.
+2. Open policy "Teams Apps for DSI" and remove Thrive Global app in Third-Party Apps.
+
+To Delete custom app setup policy to install Thrive Global app for all DSI users:
+
+1. Login to Teams Admin center and select Settings & policies
+2. under custom policies select App Setup policy
+3. Select and delete new custom policy created
+
+
+
+
+To Remove Thrive Global app to "Teams Apps for DSI" Permission Policy for DSI users (DSG_Intune_All_USA_Users_Dynamic):
+
+1. Login to App Permission policies from Teams admin center.
+2. Open policy "Teams Apps for DSI" and remove Thrive Global app in Third-Party Apps.
+
+To Delete custom app setup policy to install Thrive Global app for all DSI users:
+
+1. Login to Teams Admin center and select Settings & policies
+2. under custom policies select App Setup policy
+3. Select and delete new custom policy created
+
+
+
+

@@ -1,0 +1,75 @@
+/home/libreoffice/lib_office/opt/libreoffice24.2/program/soffice --headless --convert-to pdf --outdir /tmp/8dcd1acca1c6b18/tempfile/akurapa@dsi.com /tmp/8dcd1acca1c6b18/tempfile/akurapa@dsi.com/DSI_User_manual_Kumo-AI_RC edited version_File-Upload.docx
+
+/home/libreoffice/lib_office/opt/libreoffice24.2/program/soffice --headless --convert-to pdf --outdir /tmp/8dcd245074be274/tempfile/akurapa@dsi.com /tmp/8dcd245074be274/tempfile/akurapa@dsi.com/sample.docx
+
+
+
+
+
+
+/home/libreoffice/lib_office/opt/libreoffice24.2/program/soffice --headless --convert-to pdf --outdir /tmp/8dcd22860740010/tempfile/mparag@dsi.com /tmp/8dcd22860740010/tempfile/mparag@dsi.com/test.docx
+
+/home/libreoffice/lib_office/opt/libreoffice24.2/program/soffice --headless --convert-to pdf --outdir /tmp/8dcf85046a88893/tempfile/ssirish@dsi.com
+/tmp/8dcf85046a88893/tempfile/ssirish@dsi.com/EDA video script_new.pptx
+
+/home/libreoffice/lib_office/opt/libreoffice24.2/program/soffice --headless --convert-to pdf --outdir /tmp/8dcf85046a88893/tempfile/ssirish@dsi.com /tmp/8dcf85046a88893/tempfile/ssirish@dsi.com/'FAQs About Clinical Studies - Part2 1.docx'
+
+/home/libreoffice/lib_office/opt/libreoffice24.2/program/soffice --headless --convert-to pdf --outdir /tmp/8dcf85046a88893/tempfile/ssirish@dsi.com /tmp/8dcf85046a88893/tempfile/ssirish@dsi.com/TBD.docx
+
+apt remove unattended-upgrades
+
+crontab -l 
+ls /etc/cron.*
+
+cat /etc/cron.daily/<script_name>
+cat /etc/cron.daily/apt-compat
+cat /etc/cron.daily/dpkg
+
+
+apt install libxinerama1
+
+apt-get install openjdk-11-jre-headless
+
+
+
+commands 
+
+wget https://download.documentfoundation.org/libreoffice/stable/24.2.6/deb/x86_64/LibreOffice_24.2.6_Linux_x86-64_deb.tar.gz
+
+tar -xvzf LibreOffice_24.2.6_Linux_x86-64_deb.tar.gz
+
+for pkg in ../Libreoffice_24.2.6.2_Linux_x86-64_deb/debs/*.deb; do
+    dpkg-deb -x "$pkg" .
+done
+
+/home/libreoffice/lib_office/opt/libreoffice24.2/program/soffice --headless --convert-to pdf --outdir /tmp/8dcd8d29e57d2f0/tempfile/mparag@dsi.com /tmp/8dcd8d29e57d2f0/tempfile/mparag@dsi.com/Tax_and_accounting_specialist_JD.docx
+8dcd8d7e8d7341d
+8dcd8d29e57d2f0
+8dcd3467b62963c
+apt install libxinerama1
+
+nano /etc/apt/sources.list
+----copy below------
+deb http://deb.debian.org/debian bullseye-backports main
+---- paste at the bottom------------
+press ctrl + O
+press Enter
+press ctrl + X
+apt update
+apt install -t bullseye-backports openjdk-11-jdk
+
+apt-get install libcairo2
+apt-get install libxslt1.1
+
+
+chmod 755 tmp/8dcd8bace527cfc/tempfile/
+
+sudo chmod +x /home/libreoffice/lib_office/opt/libreoffice24.2/program/soffice
+
+
+https://sapocopenai.blob.core.windows.net/file-upload/mparag@dsi.com/tempfile/mparag@dsi.com/Tax_and_accounting_specialist_JD.pdf?se=2024-09-11T21%3A03%3A59Z&sp=r&sv=2021-08-06&sr=b&sig=LosfKQ9i6Q0hnNLP4n580DlfIlDb82a15kMEohJNH68%3D
+
+https://sapocopenai.blob.core.windows.net/file-upload/mparag@dsi.com/Tax_and_accounting_specialist_JD.pdf
+
+
+8dcd24e57708f3c

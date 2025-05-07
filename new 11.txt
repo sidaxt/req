@@ -1,0 +1,52 @@
+$ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest -Uri https://aka.ms/installazurecliwindowsx64 -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; Remove-Item .\AzureCLI.msi
+
+
+$ProgressPreference = 'Continue'; Invoke-WebRequest -Uri https://aka.ms/installazurecliwindowsx64 -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; Remove-Item .\AzureCLI.msi
+
+
+1.	Test if app is running correctly (confirm by accessing the http://localhost:5000 )
+2.	Change the redirect uri link in code.
+3.	Go into /app/backend folder and create a .zip file of everything in it excluding pycache and env folder
+4.	Open the powershell in folder where zip file is located.
+5.	Run command -  az login
+6.	Set subscription (1st time login only) - az account set --subscription "DSI Apex"
+7.	Run command -  
+	$appServiceName="dsi-general-assistant-dev"
+8.	$resourceGroupName="RG-PoC-OpenAI"
+9.	az webapp deploy --name $appServiceName  --resource-group $resourceGroupName --src-path DevDeployment_28Jun_2340.zip
+
+
+DEV
+$appServiceName="dsi-general-assistant-dev"
+$resourceGroupName="RG-PoC-OpenAI"
+az webapp deploy --name $appServiceName  --resource-group $resourceGroupName --src-path DevDeployment_28Jun_2340.zip
+
+UAT
+$appServiceName="ChatDSI-General-Assistant-UAT"
+$resourceGroupName="RG-QA-OpenAI"
+az webapp deploy --name $appServiceName  --resource-group $resourceGroupName --src-path UATDeployment_02Jul_2110.zip
+
+
+PROD
+$appServiceName="dsi-general-assistant"
+$resourceGroupName="RG-Prod-OpenAI"
+az webapp deploy --name $appServiceName  --resource-group $resourceGroupName --src-path UATDeployment_02Jul_2110.zip
+
+
+
+
+
+act as english to japanese translator
+
+health outcomes of oncology
+
+UI Revamp - Logout added (to fix), User name, Export options, creativity feature fixes added
+
+
+
+https://login.microsoftonline.com/b0179487-3026-44f7-bcd6-25ed452138d0/oauth2/v2.0/authorize?client_id=a07d9177-7a2a-4c92-b58e-d36abe7ce65b&response_type=code&redirect_uri=https%3A%2F%2Fdsi-general-assistant-dev.azurewebsites.net%2F&scope=User.Read+offline_access+openid+profile&state=random_state&prompt=select_account
+
+https://login.microsoftonline.com/b0179487-3026-44f7-bcd6-25ed452138d0/oauth2/v2.0/authorize?client_id=a07d9177-7a2a-4c92-b58e-d36abe7ce65b&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5000&scope=User.Read+offline_access+openid+profile&state=random_state&prompt=select_account&sso_reload=true
+
+http://localhost:5000/#/https://login.microsoftonline.com/b0179487-3026-44f7-bcd6-25ed452138d0/oauth2/v2.0/authorize?client_id=a07d9177-7a2a-4c92-b58e-d36abe7ce65b&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5000&scope=User.Read+offline_access+openid+profile&state=random_state&prompt=select_account
+

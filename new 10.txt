@@ -1,0 +1,15 @@
+2. Best practices
+5. Chat history encryption and decryption 
+6. Add more data sources for search - 
+7. conversational ai - keep on conversing and get responses
+8. Videos to upload and stream the data
+9. Coding assistant - to generate code in R
+
+Need to read through Segmentation and other aspects on Machine Learning
+
+
+Further validation can be done for Super search - basis confirmation from Ramesh, to be taken up later
+
+Fixed the libraries issue and raised an incident to track further - Incident no: DS-INC0555631
+
+

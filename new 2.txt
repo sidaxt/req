@@ -1,0 +1,52 @@
+**Key Considerations
+Cost: Scale-out often costs more than scale-up due to additional instance charges. Combining both further increases costs.
+Downtime: Scale-up may involve downtime depending on the Azure service, while scale-out typically does not.
+Application Architecture: Ensure your app supports horizontal scaling (stateless or shared state mechanisms).
+Automation: Use Azure Autoscale to dynamically scale based on metrics (CPU, memory, request count).
+
+**Scaling up is useful to handle spikes in your workloads where the current performance level cannot satisfy all the demands
+
+-Scale up when:
+You see that your workloads are hitting some performance limit such as CPU or I/O limits.
+
+You need to quickly react to fix performance issues that can't be solved with classic database optimization.
+
+You need a solution that allows you to change service tiers to adapt to changing latency requirements.
+
+**App developers start to consider scaling out or horizontal scaling when they can't get enough resources for their workloads, even operating on the highest performance levels.
+
+-Scale out when:
+You have geo-distributed applications where every app should access part of the data in the region. Each app will access only the shard associated to that region without affecting other shards.
+
+You have a global sharding scenario—such as load balancing—where you have a large number of geo-distributed clients that insert data in their own dedicated shards.
+
+You've maxed out your performance requirements, even in the highest performance tiers of your service, or if your data cannot fit into a single database.
+
+---------Autoscaling
+
+While there are two main ways that apps can scale—vertically or horizontally— it's less common to automate vertical scaling, because scaling up often requires making the system temporarily unavailable while it is being redeployed.
+
+Autoscaling is more common when scaling horizontally because scaling out or in means just adding or removing instances of a resource and your app continues running without interruption as new resources are provisioned.
+
+*Rules
+Rules define the conditions needed to trigger a scale event, the direction of the scaling, and the amount to scale by.
+
+Rules can be:
+
+Metric-based: Trigger based on a metric value, for example, when CPU usage is above 50%.
+Time-based: Trigger based on a schedule, for example, every Saturday at 8 AM.
+Autoscale scales out if any of the rules are met. Autoscale scales in only if all the rules are met.
+--------
+
+when your application starts to feel slow or can't handle as many users as before, think of it as the right time to scale up.
+when your application gets really busy, like during a big sale or when lots of people are using it at once, that's when you scale out.
+
+-----
+Cost per second
+You're charged per second for each instance, including prewarmed instances. 
+Automatic scaling
+Azure App Service automatically adds and removes instances based on demand. This can help you avoid cold start issues and improve your app's performance. 
+De-allocating resources
+When demand decreases, Azure App Service de-allocates resources to minimize costs. 
+Estimated costs
+You can view estimated costs when you create an App Service app or plan.

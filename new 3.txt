@@ -1,0 +1,30 @@
+<inbound>
+  <set-variable name="group" value="@(context.Subscription.Key)" />
+  <choose>
+    <when condition="@(context.Variables["group"] == 'GroupA')">
+      <set-backend-service base-url="https://openai.api.azure.com/v1/groupA" />
+    </when>
+    <when condition="@(context.Variables["group"] == 'GroupB')">
+      <set-backend-service base-url="https://openai.api.azure.com/v1/groupB" />
+    </when>
+    <otherwise>
+      <return-response status-code="403" />
+    </otherwise>
+  </choose>
+</inbound>
+
+
+
+<rate-limit-by-key calls="1000" renewal-period="60" />
+
+<rate-limit-by-key calls="100" renewal-period="60" counter-key="@(context.Subscription.Id)" />
+
+<set-header name="Authorization" exists-action="override">
+    <value>Bearer YOUR_OPENAI_API_KEY</value>
+</set-header>
+
+<validate-parameters>
+    <parameter name="api_key" required="true" />
+</validate-parameters>
+
+
